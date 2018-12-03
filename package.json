@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/glevanov/project-lvl1-s388/issues"
   },
-  "homepage": "https://github.com/glevanov/project-lvl1-s388#readme"
+  "homepage": "https://github.com/glevanov/project-lvl1-s388#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/cli": "^7.1.5",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6"
+  }
 }
