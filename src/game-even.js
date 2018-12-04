@@ -53,7 +53,7 @@ export default () => {
   const inputName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${inputName}\n`);
   while (currentStage <= MAX_STAGES) {
-    console.log(askQuestion());
+    askQuestion();
     currentStage += 1;
   }
   console.log(`${
