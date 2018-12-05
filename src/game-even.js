@@ -7,12 +7,7 @@ const WIN_THRESHOLD = MAX_STAGES / 2;
 let correctAnswers = 0;
 let currentStage = 1;
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = num => num % 2 === 0;
 
 const getNumber = (min = MIN_NUM, max = MAX_NUM) => Math.round(Math.random() * (max - min)) + min;
 
