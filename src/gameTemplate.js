@@ -9,8 +9,7 @@ export default (goal, getTask) => {
   console.log(`Hello, ${name}`);
   for (let stage = 0; stage < MAX_STAGES; stage += 1) {
     const task = getTask();
-    const question = task.question;
-    const correctAnswer = task.answer;
+    const { question, answer: correctAnswer } = task;
 
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
