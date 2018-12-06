@@ -18,4 +18,5 @@ Hexlet Frontend - Project No. 1
 
 ### Calc
 ```brain-calc```
+
 [![asciicast](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB.svg)](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB)
