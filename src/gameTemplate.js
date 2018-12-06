@@ -1,39 +1,25 @@
 import readlineSync from 'readline-sync';
 
-const welcome = 'Welcome to the Brain Games!';
+const MAX_STAGES = 3;
 
-const greetUser = name => `Hello, ${name}`;
-const getUserName = () => readlineSync.question('May I have your name? ');
-const getQuestion = question => (`Question: ${question}`);
-const getAnswer = () => readlineSync.question('Your answer: ');
-const getCongratulation = name => `Congratulations, ${name}`;
+export default (goal, getTask) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(`${goal}\n`);
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}`);
+  for (let stage = 0; stage < MAX_STAGES; stage += 1) {
+    const task = getTask();
+    const question = task.question;
+    const correctAnswer = task.answer;
 
-export default (task) => {
-  console.log(welcome);
-  console.log(`${task}\n`);
-  const userName = getUserName();
-  console.log(greetUser(userName));
-  console.log(getCongratulation(userName));
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+    if (userAnswer === correctAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log('Incorrect! Game over');
+      return;
+    }
+  }
+  console.log(`Congratulations, ${name}`);
 };
-
-/*
-$ brain-calc
-
-Welcome to the Brain Games!
-What is the result of the expression?
-
-// greeting
-May I have your name? Sam
-Hello, Sam!
-
-Question: 4 + 10
-Your answer: 14
-Correct!
-Question: 25 - 11
-Your answer: 14
-Correct!
-Question: 25 * 7
-Your answer: 175
-Correct!
-Congratulations, Sam!
-*/
