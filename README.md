@@ -26,3 +26,8 @@ Hexlet Frontend - Project No. 1
 ```brain-gcd```
 
 [![asciicast](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL.svg)](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL)
+
+### Progression
+```brain-progression```
+
+[![asciicast](https://asciinema.org/a/AA5p6Wfl4vI8ze1pS4Z5tPZzx.svg)](https://asciinema.org/a/AA5p6Wfl4vI8ze1pS4Z5tPZzx)
