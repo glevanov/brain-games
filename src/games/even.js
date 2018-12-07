@@ -1,18 +1,21 @@
 import gameTemplate from '../gameTemplate';
-import { isEven, getNumber } from '../util';
+import getNumber from '../utils';
 
-const MIN_NUM = 1;
-const MAX_NUM = 100;
+const minNum = 1;
+const maxNum = 100;
+
+const isEven = num => num % 2 === 0;
+
+const goal = 'Answer "yes" if number even otherwise answer "no".';
+const getTask = () => {
+  const question = getNumber(minNum, maxNum);
+  const answer = isEven(question) ? 'yes' : 'no';
+  return {
+    question,
+    answer,
+  };
+};
 
 export default () => {
-  const goal = 'Answer "yes" if number even otherwise answer "no".';
-  const getTask = () => {
-    const currentQuestion = getNumber(MIN_NUM, MAX_NUM);
-    const currentAnswer = isEven(currentQuestion) ? 'yes' : 'no';
-    return {
-      question: currentQuestion,
-      answer: currentAnswer,
-    };
-  };
   gameTemplate(goal, getTask);
 };

@@ -1,8 +1,8 @@
 import gameTemplate from '../gameTemplate';
-import { getNumber } from '../util';
+import getNumber from '../utils';
 
-const MIN_NUM = 1;
-const MAX_NUM = 50;
+const minNum = 1;
+const maxNum = 50;
 
 const operations = {
   '+': (a, b) => a + b,
@@ -12,19 +12,20 @@ const operations = {
 const operators = Object.keys(operations);
 const getOperator = () => operators[getNumber(0, operators.length - 1)];
 
-export default () => {
-  const goal = 'What is the result of the expression?';
-  const getTask = () => {
-    const firstNum = getNumber(MIN_NUM, MAX_NUM);
-    const secondNum = getNumber(MIN_NUM, MAX_NUM);
-    const currentOperator = getOperator();
+const goal = 'What is the result of the expression?';
+const getTask = () => {
+  const firstNum = getNumber(minNum, maxNum);
+  const secondNum = getNumber(minNum, maxNum);
+  const currentOperator = getOperator();
 
-    const currentQuestion = `${firstNum} ${currentOperator} ${secondNum}`;
-    const currentAnswer = `${operations[currentOperator](firstNum, secondNum)}`;
-    return {
-      question: currentQuestion,
-      answer: currentAnswer,
-    };
+  const question = `${firstNum} ${currentOperator} ${secondNum}`;
+  const answer = `${operations[currentOperator](firstNum, secondNum)}`;
+  return {
+    question,
+    answer,
   };
+};
+
+export default () => {
   gameTemplate(goal, getTask);
 };
