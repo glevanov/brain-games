@@ -18,7 +18,7 @@ const getTask = () => {
 
   const progression = bumpProgression(
     getProgression(getNumber(minNum, maxNum)),
-    getNumber(minNum, maxNum),
+    Math.floor(getNumber(minNum, maxNum) / 2),
   );
   const answerIndex = Math.floor(progressionLength / 2);
   const firstHalf = progression.slice(0, answerIndex).join(' ');
