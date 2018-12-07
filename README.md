@@ -9,7 +9,7 @@ Hexlet Frontend - Project No. 1
 
 [![asciicast](https://asciinema.org/a/ptlygE3twJbQoJEq0BU7b2ee4.svg)](https://asciinema.org/a/ptlygE3twJbQoJEq0BU7b2ee4)
 
-## Game Preview
+## Games Preview
 
 ### Even
 ```brain-even```
@@ -20,3 +20,9 @@ Hexlet Frontend - Project No. 1
 ```brain-calc```
 
 [![asciicast](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB.svg)](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB)
+
+
+### GCD (Greatest Common Divisor)
+```brain-gcd```
+
+[![asciicast](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL.svg)](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL)
