@@ -1,3 +1,6 @@
+.DS_Store
+.idea
+Thumbs.db
 *.sublime*
 node_modules/
 dist/
