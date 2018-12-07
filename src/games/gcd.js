@@ -4,24 +4,25 @@ import getNumber from '../utils';
 const minNum = 1;
 const maxNum = 100;
 
-const getDivisors = (num) => {
-  const result = [];
-  for (let i = num; i > 0; i -= 1) {
-    if (num % i === 0) {
-      result.push(i);
-    }
-  }
-  return result;
-};
-
-const getCommonDivisors = (firstArr, secondArr) => firstArr.filter(
-  it => secondArr.indexOf(it) !== -1,
-);
-
 const getGCD = (firstNum, secondNum) => {
   if (firstNum === secondNum) {
     return firstNum;
   }
+
+  const getDivisors = (num) => {
+    const result = [];
+    for (let i = num; i > 0; i -= 1) {
+      if (num % i === 0) {
+        result.push(i);
+      }
+    }
+    return result;
+  };
+
+  const getCommonDivisors = (firstArr, secondArr) => firstArr.filter(
+    it => secondArr.indexOf(it) !== -1,
+  );
+
   const firstNumDivisors = getDivisors(firstNum);
   const secondNumDivisors = getDivisors(secondNum);
 
