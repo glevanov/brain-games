@@ -6,7 +6,7 @@ import prime from './games/prime';
 import progression from './games/progression';
 
 export default () => {
-  const launcher = {
+  const gamesLauncher = {
     1: even,
     2: calc,
     3: gcd,
@@ -34,6 +34,5 @@ export default () => {
 
   console.log('\n', 'Which game do you want to play?');
   console.log(menuText, '\n');
-  askPlayer(launcher);
-
+  askPlayer(gamesLauncher);
 };
