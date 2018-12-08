@@ -9,6 +9,13 @@ Hexlet Frontend - Project No. 1
 
 [![asciicast](https://asciinema.org/a/ptlygE3twJbQoJEq0BU7b2ee4.svg)](https://asciinema.org/a/ptlygE3twJbQoJEq0BU7b2ee4)
 
+## Start
+To access games menu run ```brain-games```
+ 
+[![asciicast](https://asciinema.org/a/35whUmA76bDsOQPkAYrRrLTs2.svg)](https://asciinema.org/a/35whUmA76bDsOQPkAYrRrLTs2)
+
+To start a specific game use one of the commands below.
+
 ## Games Preview
 
 ### Even
@@ -16,13 +23,13 @@ Hexlet Frontend - Project No. 1
 
 [![asciicast](https://asciinema.org/a/W6mC5hdjZ8DPBpvr8g7ofaDXY.svg)](https://asciinema.org/a/W6mC5hdjZ8DPBpvr8g7ofaDXY)
 
-### Calc
+### Calculator
 ```brain-calc```
 
 [![asciicast](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB.svg)](https://asciinema.org/a/bXzl0WGB85AGSbGIbWyi8M7QB)
 
 
-### GCD (Greatest Common Divisor)
+### Greatest Common Divisor
 ```brain-gcd```
 
 [![asciicast](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL.svg)](https://asciinema.org/a/v2nXCbgTZn9sqJ1C8XAPS2xnL)
