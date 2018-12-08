@@ -1,6 +1,6 @@
 {
   "name": "brain-games-glevanov",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Project \"Brain Games\" from Hexlet Frontend course",
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
