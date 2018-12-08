@@ -31,3 +31,9 @@ Hexlet Frontend - Project No. 1
 ```brain-progression```
 
 [![asciicast](https://asciinema.org/a/AA5p6Wfl4vI8ze1pS4Z5tPZzx.svg)](https://asciinema.org/a/AA5p6Wfl4vI8ze1pS4Z5tPZzx)
+
+
+### Prime
+```brain-prime```
+
+[![asciicast](https://asciinema.org/a/B7SS3EpcIBfVl2LDb4iSUxxxY.svg)](https://asciinema.org/a/B7SS3EpcIBfVl2LDb4iSUxxxY)
