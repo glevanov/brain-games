@@ -5,28 +5,8 @@ const minNum = 1;
 const maxNum = 100;
 
 const getGCD = (firstNum, secondNum) => {
-  if (firstNum === secondNum) {
-    return firstNum;
-  }
-
-  const getDivisors = (num) => {
-    const result = [];
-    for (let i = num; i > 0; i -= 1) {
-      if (num % i === 0) {
-        result.push(i);
-      }
-    }
-    return result;
-  };
-
-  const getCommonDivisors = (firstArr, secondArr) => firstArr.filter(
-    it => secondArr.indexOf(it) !== -1,
-  );
-
-  const firstNumDivisors = getDivisors(firstNum);
-  const secondNumDivisors = getDivisors(secondNum);
-
-  return getCommonDivisors(firstNumDivisors, secondNumDivisors)[0];
+  if (secondNum === 0) return firstNum;
+  return getGCD(secondNum, firstNum % secondNum);
 };
 
 const goal = 'Find the greatest common divisor of given numbers.';
