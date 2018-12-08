@@ -5,22 +5,21 @@ const minNum = 1;
 const maxNum = 30;
 const progressionLength = 10;
 
+const getProgression = (step, firstElement) => {
+  const result = [];
+  for (let i = 1; i <= progressionLength; i += 1) {
+    result.push(step * i + firstElement);
+  }
+  return result;
+};
+
 const goal = 'What number is missing in the progression?';
 const getTask = () => {
-  const getProgression = (num) => {
-    const result = [];
-    for (let i = 1; i <= progressionLength; i += 1) {
-      result.push(num * i);
-    }
-    return result;
-  };
-  const bumpProgression = (arr, num) => arr.map(it => it + num);
-
-  const progression = bumpProgression(
-    getProgression(getNumber(minNum, maxNum)),
+  const progression = getProgression(
+    getNumber(minNum, maxNum),
     Math.floor(getNumber(minNum, maxNum) / 2),
   );
-  const answerIndex = Math.floor(progressionLength / 2);
+  const answerIndex = getNumber(0, progressionLength - 1);
   const firstHalf = progression.slice(0, answerIndex).join(' ');
   const secondHalf = progression.slice(answerIndex + 1).join(' ');
 
