@@ -6,7 +6,7 @@ import prime from './games/prime';
 import progression from './games/progression';
 
 export default () => {
-  const games = {
+  const launcher = {
     1: even,
     2: calc,
     3: gcd,
@@ -14,21 +14,26 @@ export default () => {
     5: prime,
   };
 
-  const askPlayer = () => {
-    const choice = readlineSync.question('Please enter number ');
-    if (Object.keys(games).indexOf(choice) === -1) {
-      console.log('Wrong number, try again');
-      askPlayer();
-    }
-    console.log('\n');
-    games[choice]();
-  };
-
-  console.log('Which game do you want to play?\n\n');
-  console.log(`1: Even
+  const menuText = `\
+  1: Even
   2: Calculator
   3: Greatest Common Divisor
   4: Progression
-  5: Prime`);
-  askPlayer();
+  5: Prime`;
+
+  const askPlayer = (launcher) => {
+    const games = Object.keys(launcher);
+    const choice = readlineSync.question('Please enter number: ');
+    if (games.indexOf(choice) === -1) {
+      console.log('Wrong number, try again', '\n');
+      askPlayer(launcher);
+    }
+    console.clear();
+    launcher[choice]();
+  };
+
+  console.log('\n', 'Which game do you want to play?');
+  console.log(menuText, '\n');
+  askPlayer(launcher);
+
 };
